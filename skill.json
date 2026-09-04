@@ -1,0 +1,36 @@
+{
+  "name": "genpark-hierarchical-task-decomposition-dag-scheduler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical multi-agent task breakdown into Directed Acyclic Graphs (DAG) with worker matching and wave scheduling.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "multi-agent",
+  "tags": [
+    "crewai",
+    "dag-scheduler",
+    "langgraph",
+    "autogen",
+    "task-orchestration"
+  ],
+  "inputs": {
+    "workflow_id": {
+      "type": "string"
+    },
+    "tasks_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "schedule_id": {
+      "type": "string"
+    },
+    "total_execution_waves": {
+      "type": "integer"
+    },
+    "estimated_makespan_sec": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
